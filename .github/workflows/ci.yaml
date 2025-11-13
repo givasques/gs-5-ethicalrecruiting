@@ -1,0 +1,24 @@
+name: Continuous Integration (CI)
+
+on:
+  push:
+    branches:
+      - feature/**
+      - release
+      - hotfix
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Checkout
+              uses: actions/checkout@v5
+
+            - name: Build da Aplicacao
+              run: mvn clean package -DskipTests
+              
+            - name: Execução de Testes Unitários
+              run: mvn test
+
+            - name: Build da imagem Docker
+              run: docker build -t gs-5-ethicalrecruiting .
