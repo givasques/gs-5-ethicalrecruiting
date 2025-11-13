@@ -10,7 +10,6 @@ O **Ethical Recruiting** (sistema de recrutamento ético) propõe o uso de **int
 A ideia é:
 - Promover diversidade e equidade nas contratações.
 - Aumentar a confiança entre candidatos e empresas.
-- Reduzir discriminação inconsciente nos processos seletivos.
 
 ## Sobre a API
 A API fornece um endpoint único (``GET/info``) para fornecer dados sobre o projeto:
