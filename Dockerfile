@@ -7,4 +7,4 @@ FROM eclipse-temurin:17-alpine-3.22
 RUN mkdir /opt/app
 COPY --from=build /opt/app/target/*.jar /opt/app/app.jar
 WORKDIR /opt/app
-CMD [ "java", "-jar", "app.jar"]
+CMD [ "java", "-jar", "app.jar"]    
