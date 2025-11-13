@@ -18,8 +18,8 @@ jobs:
                     username: ${{ vars.DOCKER_USER }}
                     password: ${{ secrets.DOCKER_TOKEN }}
 
-            -   name: Build and Push
-                uses: docker/build-push-action@v6
-                with:
-                    push: true
-                    tags: givasques1101/gs-5-ethicalrecruiting:latest
+            - name: Construção da Imagem
+              run: docker build -t givasques1101/gs-5-ethicalrecruiting:latest .
+
+            - name: Push da Imagem no DockerHub
+              run: docker push givasques1101/gs-5-ethicalrecruiting:latest
