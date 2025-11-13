@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/givasques/gs-5-ethicalrecruiting/compare/v1.0.0...v1.1.0) (2025-11-13)
+
+
+### Features
+
+* update cd.yaml ([9b52a68](https://github.com/givasques/gs-5-ethicalrecruiting/commit/9b52a6833050d148355392f28938b93ad8a4c551))
+
 ## 1.0.0 (2025-11-13)
 
 
